@@ -1,3 +1,5 @@
+import Modal from "./Modal";
+
  const ListHeader = ({ listName }) => { 
 
 
@@ -14,6 +16,7 @@
                 <button className="create" onClick={signOut}>SIGN OUT</button>
 
             </div>
+            <Modal/>
         </div>
     )
  }

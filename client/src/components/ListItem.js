@@ -2,18 +2,25 @@
 import TickIcon from './TickIcon';
 import ProgressBar from './ProgressBar';
 
-const ListItem = ( {task} ) => {
+const ListItem = ({ task }) => {
     return (
-        <div>
-            <div className="info-container"></div>
-            
-            <p>{task.title}</p>
-            <p>{task.user_email}</p>
-            <p>{task.id}</p>
-    
-        </div>
+        <li className='list-item'>
+            <div className="info-container">
+                <TickIcon></TickIcon>
+                <p>{task.title}</p>
+                <ProgressBar></ProgressBar>
+            </div>
+
+
+
+            <div className="button-container">
+                <button className='edit'>EDIT</button>
+                <button className='delete'>DELETE</button>
+
+            </div>
+        </li >
     )
- }
- export default ListItem;
+}
+export default ListItem;
 
  //3764996373
