@@ -9,14 +9,12 @@ const ListItem = ({ task }) => {
                 <TickIcon></TickIcon>
                 <p>{task.title}</p>
                 <ProgressBar></ProgressBar>
-            </div>
 
+                <div className="button-container">
+                    <button className='edit'>EDIT</button>
+                    <button className='delete'>DELETE</button>
 
-
-            <div className="button-container">
-                <button className='edit'>EDIT</button>
-                <button className='delete'>DELETE</button>
-
+                </div>
             </div>
         </li >
     )
